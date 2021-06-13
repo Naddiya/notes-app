@@ -5,21 +5,16 @@
   "author": "Naddiya",
   "license": "MIT",
   "dependencies": {
-    "@theme-ui/presets": "^0.9.1",
-    "body-parser": "^1.19.0",
-    "dotenv": "^10.0.0",
-    "dotenv-load": "^2.0.0",
-    "next": "^10.2.3",
-    "next-connect": "^0.8.1",
-    "next-env": "^1.1.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "theme-ui": "^0.9.1"
+    "@emotion/babel-plugin": "^11.3.0",
+    "@theme-ui/presets": "^0.3.0",
+    "next": "^9.5.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "theme-ui": "^0.3.1"
   },
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start"
-  },
-  "devDependencies": {}
+  }
 }
