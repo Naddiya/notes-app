@@ -1,10 +1,10 @@
-import React from 'react'
-import { useRouter } from 'next/router'
-import Link from 'next/link'
+import React from 'react';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 export default () => {
-  const router = useRouter()
-  const { id }= router.query
+  const router = useRouter();
+  const { id } = router.query;
 
   return (
     <div>
@@ -14,5 +14,5 @@ export default () => {
         <a>Notes</a>
       </Link>
     </div>
-  )
-}
+  );
+};
