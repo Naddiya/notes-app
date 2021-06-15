@@ -1,11 +1,7 @@
-import nc from 'next-connect';
-
-const handler = nc()
-  .get((req, res) => {
-    res.json({ message: 'Got it !' });
-  })
-  .post((req, res) => {
-    res.json({ message: 'posted' });
-  });
-
-export default handler;
+export async function getServerSideProps() {
+  const res = await fetch(`http://localhost:3000/api/note/`);
+  const { data } = await res.json();
+  return {
+    props: { notes: data }
+  };
+}
